@@ -1,0 +1,54 @@
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 5px;
+  grid-template-areas:
+    "p p p p p"
+    "h h h h h"
+    "m c c c c"
+    "m c c c c"
+    "m c c c c"
+    "f f f f f"
+}
+
+.img-welcome{
+     grid-area: p;
+     align-self: center;
+     justify-self: center;
+     }
+
+.img-welcome img{
+       height:500px;
+     }
+
+.header {
+   grid-area: h;
+   background-color: grey;
+   border: solid 1px black;
+   height: 150px;
+   align-items: center;
+   }
+
+.img-logo{
+
+}
+
+/*.img-logo img{
+  width: 500px;
+  height: 100%;
+  }*/
+
+
+.menu {
+    grid-area: m;
+    background-color: blue;
+    }
+.content {
+    grid-area: c;
+    background-color: green;
+    }
+.footer {
+    grid-area: f;
+    background-color: orange;
+    }

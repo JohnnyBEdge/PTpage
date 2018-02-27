@@ -4,7 +4,6 @@ html{
   }
 
 body{
-  margin: 0 100px;
   font-family: 'Raleway', sans-serif;
   color: #606060;
 }
@@ -30,6 +29,7 @@ p{
     "m c c c c"
     "m c c c c"
     "f f f f f";
+    border: solid 3px black;
     }
 
 .header{
@@ -41,6 +41,7 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: sticky;
 }
 
 .img-welcome img{
@@ -51,12 +52,15 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
+  background-color: yellow;
 }
 
 .menu{
   grid-area: m;
   background: white;
   border: solid 1px black;
+  width: 75%;
 }
 
 .menu ul{
@@ -72,24 +76,30 @@ p{
 }
 
 .menu ul li{
-  width: 1fr;
   padding: 20px;
+}
+
+.menu a:link{
+  text-decoration: none;
+  color: inherit;
 }
 
 .content{
   grid-area: c;
   background: white;
-  border: solid 1px black;
-  float: left;
-}
+  }
 
-.home {
-  margin: 0 100px;
+.home p{
+  margin: 0 150px;
+  position: relative;
+  right: 11%;
   }
 
 .home h2{
-  text-align: center;
+  position: relative;
+  left: 25%;
 }
+
 
 .footer{
   grid-area: f;

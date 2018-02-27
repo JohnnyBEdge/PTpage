@@ -19,7 +19,6 @@ p{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
-  grid-gap: 5px;
   grid-template-areas:
     "p p p p p"
     "h h h h h"
@@ -84,4 +83,27 @@ p{
     grid-area: f;
     background-color: orange;
     border-top: solid 3px black
+    }
+/*
+.social {
+  text-align: left;
+  display: inline-block;
+}*/
+
+.ppt {
+  grid-column-start: p3;
+  background: red;
+
+}
+
+    .fa-instagram {
+      background: white;
+      margin: 5px;
+      padding: 3px;
+    }
+
+    .fa-facebook {
+      background: white;
+      margin: 5px;
+      padding: 3px;
     }

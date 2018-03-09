@@ -53,19 +53,20 @@ p{
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
-  background-color: yellow;
+  overflow: inherit;
 }
 
 .menu{
   grid-area: m;
   background: white;
-  border: solid 1px black;
   width: 75%;
+  margin-top: 75px;
 }
 
 .menu ul{
   list-style: none;
   font-weight: bold;
+
   }
 
 .menu ul li:hover{
@@ -77,6 +78,8 @@ p{
 
 .menu ul li{
   padding: 20px;
+  box-shadow: 1px 1px 1px 1px grey;
+  margin-bottom: 5px;
 }
 
 .menu a:link{
@@ -87,6 +90,7 @@ p{
 .content{
   grid-area: c;
   background: white;
+  margin-top: 20px;
   }
 
 .home p{
@@ -99,6 +103,13 @@ p{
   position: relative;
   left: 25%;
 }
+
+.active {
+  background-color: #49c585;
+  color: white;
+  border-bottom: 2px solid #ededed;
+}
+
 
 
 .footer{
